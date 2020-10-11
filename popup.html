@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      defer></script>
     <style>
-      button {
-        height: 30px;
-        width: 30px;
+      #map {
+        height: 100%;
+      }
+      html,
+      body {
+        height: 500px;
+        width: 500px;
         outline: none;
       }
     </style>
   </head>
   <body>
-    <button id="changeColor"></button>
+    <div id="map"></div>
     <script src="popup.js"></script>
   </body>
 </html>
